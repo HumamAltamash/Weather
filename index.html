@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main-container">
+            <form id="form">
+                <input
+                    type="text"
+                    placeholder="Enter a City"
+                    id="city-name"
+                    required
+                />
+                <button>Submit</button>
+            </form>
+
+            <div class="inner-container" id="inner-container">
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                </div>
+                <div class="content" id="content">
+                    <div class="city-container">
+                        <div id="city-div" class="city-name">Patna</div>
+                        <div id="weather-div" class="weather-condition">
+                            CLEAR
+                        </div>
+                    </div>
+                    <div class="temprature-container">
+                        <div class="weather-icon">
+                            <img
+                                id="weather-icon"
+                                src="https://openweathermap.org/img/wn/01d@2x.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="temp" id="temp">21.00°C</div>
+                        <div class="min-max">
+                            <div class="min" id="min">Min: 21°C</div>
+                            <div class="max" id="max">Max: 22°C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
